@@ -41,7 +41,10 @@ classifiers = [
 
 dependencies = [
     "lark>=1.3.0",
-    "factorio-draftsman @ git+https://github.com/Snagnar/factorio-draftsman.git@main",
+    # Pin the commit that released 4.0.1: upstream's "4.0.1" tag points at
+    # 2f852ec, whose _version.py still reads 4.0.0; the version bump is in
+    # its child cb56bf6 ("format and version bump").
+    "factorio-draftsman @ git+https://github.com/redruin1/factorio-draftsman.git@cb56bf673eef3258819ef391d8f7a80763ae2952",
     "click>=8.3.0",
     "numpy>=2.3.5",
     "ortools>=9.14.6206",
