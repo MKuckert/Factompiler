@@ -1044,7 +1044,7 @@ def generate_documentation() -> str:
             "### How the Compiler Handles Entities",
             "",
             "When you use `place()` in Facto, the compiler creates a corresponding",
-            "[Draftsman](https://github.com/Snagnar/factorio-draftsman) entity object.",
+            "[Draftsman](https://github.com/redruin1/factorio-draftsman) entity object.",
             "Properties specified in the placement object (the `{...}` part) are passed directly",
             "to Draftsman as Python attributes during entity construction. The compiler validates",
             "that property names and types match what Draftsman expects for that entity class.",
